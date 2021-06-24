@@ -1,2 +1,2 @@
 # About
-A page responsive web layout built using HTML, CSS, JS AND SASS
+A responsive web page layout built using HTML, CSS, JS AND SASS
