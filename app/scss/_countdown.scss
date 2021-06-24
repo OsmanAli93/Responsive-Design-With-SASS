@@ -1,0 +1,187 @@
+.count-down {
+    border-bottom: 1px solid #dee2e6;
+
+    .count-down-title {
+        text-align: center; 
+        padding: 0 15px;
+
+        @include breakpoint-down(small) {
+
+            h2 {
+                font-size: 1.75rem;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 1.125rem;
+                line-height: 30px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                display: inline-block;
+                cursor: pointer;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                position: relative;
+                padding: 0.8125rem 2.125rem;
+                border: 1px solid $primary;
+                color: $primary;
+                overflow: hidden;
+                border-radius: 30px;
+                z-index: 1;
+                transition: all .25s ease-in-out;
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 0;
+                    top: 0;
+                    left: 0;
+                    background: #00044a;
+                    transition: height .25s ease-in-out;
+                    z-index: -1;
+
+                }
+
+                &:hover {
+                    color: #fff;
+                    border-color: #00044a;
+
+                }
+
+                &:hover::before {
+                    height: 100%;
+                }
+            }
+        }
+
+        @include breakpoint-up(medium) {
+
+            h2 {
+                font-size: 2.875rem;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 1.125rem;
+                line-height: 30px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                display: inline-block;
+                cursor: pointer;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                position: relative;
+                padding: 0.8125rem 2.125rem;
+                border: 1px solid $primary;
+                color: $primary;
+                overflow: hidden;
+                border-radius: 30px;
+                z-index: 1;
+                transition: all .25s ease-in-out;
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 0;
+                    top: 0;
+                    left: 0;
+                    background: #00044a;
+                    transition: height .25s ease-in-out;
+                    z-index: -1;
+
+                }
+
+                &:hover {
+                    color: #fff;
+                    border-color: #00044a;
+
+                }
+
+                &:hover::before {
+                    height: 100%;
+                }
+            }
+        }
+
+        @include breakpoint-up(large) {
+            
+
+            h2 {
+                font-size: 2.25rem;
+            }
+            
+
+        }
+        
+    }
+
+    .counter-wrapper {
+        text-align: center;
+        padding: 0 15px;
+        margin-bottom: 35px;
+
+        @include breakpoint-down(small) {
+            flex: 0 0 100%;
+            max-width: 100%;
+
+
+        }
+
+        @include breakpoint-up(medium) {
+            flex: 0 0 50%;
+            max-width: 50%;
+
+        }
+
+        @include breakpoint-up(large) {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+
+
+        }
+
+        .single-counter {
+
+            .counter {
+                color: #132e43;
+                font-size: 4rem;
+                display: inline-block;
+                margin-right: 5px;
+
+                @include breakpoint-down(small) {
+                    font-size: 2.5rem;
+                
+                }
+            }
+
+            p {
+                display: inline-block;
+                font-weight: 700;
+                font-size: 4rem;
+
+                @include breakpoint-down(small) {
+                    font-size: 1.875rem;
+                
+                }
+            }
+
+            
+
+        }
+
+        .counter-cap {
+            
+            p {
+                font-size: 1.125rem;
+                line-height: 1.4;
+            }
+        }
+
+    }
+}

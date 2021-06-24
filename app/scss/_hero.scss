@@ -1,0 +1,109 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, $bg-color 0%, #0c0c1f 100%);
+
+    @include breakpoint-down(small) {
+        height: 468px;
+    
+    }
+
+    @include breakpoint-up(medium) {
+        height: 500px;
+    
+    }
+
+    @include breakpoint-up(large) {
+        height: 100vh;
+    
+    }
+
+    &__caption {
+
+        @include breakpoint-down(small) {
+            padding-top: 50px;
+        }
+
+
+        @include breakpoint-up(medium) {
+            flex: 0 0 60%;
+            max-width: 60%;
+            position: relative;
+            z-index: 4;
+            padding: 0 15px;
+
+            h1 {
+                font-size: 2.125rem;
+            }
+
+            p {
+                font-size: 1.125rem;
+                line-height: 30px;
+                margin-bottom: 25px;
+            }
+        
+        }
+
+        @include breakpoint-up(large) {
+            flex-basis: 50%;
+            padding: 0 0.9375rem;
+
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-weight: 400;
+            color: #fff;
+
+            @include breakpoint-down(small) {
+                font-size: 2.0625rem;
+            
+            }
+        }
+
+        p {
+            color: #fff;
+
+            @include breakpoint-down(small) {
+                font-size: 1.125rem;
+                margin-bottom: 32px;
+                line-height: 30px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__image {
+
+        @include breakpoint-down(small) {
+            display: none;
+        }
+
+    
+        @include breakpoint-up(medium) {
+            position: absolute;
+            top: 5%;
+            right: 10px;
+
+            img {
+                width: 628px;
+                height: 369px;
+            }
+        }
+
+        @include breakpoint-up(large) {
+            position: absolute;
+            top: 20%;
+            right: 20%;
+
+            img {
+                width: 809px;
+                height: 480px;
+            }
+        }
+    }
+}

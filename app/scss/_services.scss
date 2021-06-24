@@ -1,0 +1,233 @@
+.services {
+
+    .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 15px;
+
+        @include breakpoint-down(small) {
+            flex: 0 0 100%;
+            max-width: 100%;  
+            
+        }
+
+        @include breakpoint-up(medium) {
+            flex: 0 0 83.33%;
+            max-width: 83.33%;   
+        }
+
+        @include breakpoint-up(large) {
+            flex: 0 0 50%;
+            max-width: 50%;   
+        }
+    }
+
+    .section-title {
+        text-align: center;
+
+
+        h2 {
+            margin-bottom: 17px;
+            font-size: 2.875rem;
+
+            @include breakpoint-down(small) {
+                font-size: 1.75rem;
+            }
+
+            @include breakpoint-up(medium) {
+                font-size: 2.875rem;   
+            }
+
+        }
+
+        span {
+            color: $primary;
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: 19px;
+            display: block;
+        }
+
+    }
+
+    .col-block {
+        flex: 33.33%;
+        max-width: 33.33%;
+
+        @include breakpoint-down(small) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        @include breakpoint-up(medium) {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+        }
+    }
+
+    .card {
+        text-align: center;
+        padding: 2.5rem 1.3125rem;
+
+        .card-icon {
+            color: $primary;
+            margin-bottom: 50px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #fff;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba($color: #000000, $alpha: 0.05);
+
+            i {
+                font-size: 3.125rem;
+                line-height: 120px;
+            }
+        }
+
+        .card-caption {
+            
+            h3 {
+                margin-bottom: 25px;
+                font-size: 28px;
+            }
+
+            p {
+                color: #3f4854;
+                font-size: 1rem;
+                line-height: 30px;
+                margin-bottom: 36px;
+            }
+        }
+    }
+
+    
+    
+}
+
+.services-2 {
+    background: linear-gradient(to right, #0c0c1f 0%, $bg-color 100%);
+
+    .services-help {
+        text-align: center;
+        padding-top: 50px;
+        color: #fff;
+
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    .services-block {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 15px;
+
+        span {
+            color: $primary;
+        }
+
+
+        h2, p {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        span {
+            margin-bottom: 19px;
+            display: block;
+        }
+
+        @include breakpoint-down(small) {
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            p {
+                font-size: 1.125rem;
+                line-height: 30px;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            span {
+                color: $primary;
+            }
+        }
+
+        @include breakpoint-up(medium) {
+            flex: 0 0 91.67%;
+            max-width: 91.67%;
+
+            h2 {
+                font-size: 2.875rem;
+            }
+
+            p {
+                font-size: 1.125rem;
+                line-height: 30px;
+            }
+        
+        }
+
+        @include breakpoint-up(large) {
+            flex: 0 0 50%;
+            max-width: 50%;
+            align-self: center;
+        }
+
+
+    }
+
+    .card-wrapper {
+        color: $primary;
+        padding: 0 15px;
+        flex: 0 0 25%;
+        max-width: 25%;
+        margin-bottom: 25px;
+
+        @include breakpoint-down(small) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        @include breakpoint-up(medium) {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+
+        .card-inner {
+            padding: 50px 36px 39px 36px;
+            border: 1px solid rgba($color: #fff, $alpha: 0.2);
+        }
+
+
+        .card-icon {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 32px;
+
+        }
+
+        .card-cap {
+
+            h5 {
+                text-align: center;
+                font-size: 22px;
+                color: #fff;
+            }
+        }
+    }
+
+}

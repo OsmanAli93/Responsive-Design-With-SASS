@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-Solution</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;600;700&family=Mulish:wght@500&display=swap" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/dist/style.css">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="container">
+        <nav class="flex flex-justify-between flex-align-stretch">
+            <a href="/" class="header__logo">
+                <h3>IT Solutions</h3>
+            </a>
+
+            <button type="button" id="mobile-menu" class="header__menu hidden-for-desktop active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="header__links hidden-for-mobile">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Case Study</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+
+        </nav>  
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero relative">
+        <div class="container">
+            <div class="flex">
+                <div class="hero__caption">
+                    <h1>We provide solutions for your IT problems</h1>
+                    <p>We bring the power of data science and artificial intelligence to every business.</p>
+                    <a href="#" class="btn hero-btn">Our Services</a>
+                </div>
+                <div class="hero__image">
+                    <img src="/images/hero-section.webp" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services section-gap">
+        <div class="container">
+            <div class="flex flex-justify-center mb-35">
+                <div class="col-6">
+                    <div class="section-title">
+                        <span>Our Services</span>
+                        <h2>Solutions for your startup and enterprises</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-block">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <div class="card-caption">
+                            <h3>Managed IT services</h3>
+                            <p>We bring the power of data science and artificial intelligence to every business.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-block">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="far fa-hdd"></i>
+                        </div>
+                        <div class="card-caption">
+                            <h3>Backup and Recovery</h3>
+                            <p>We bring the power of data science and artificial intelligence to every business.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-block">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="card-caption">
+                            <h3>Cyber security</h3>
+                            <p>We bring the power of data science and artificial intelligence to every business.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="about-block">
+                    <div class="about-image">
+                        <img src="/images/about-1.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="about-block">
+                    <div class="about-text">
+                        <div class="about-title">
+                            <h1>Grow your business fast.</h1>
+                            <div class="about-offer">
+                                <div class="icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <div class="caption">
+                                    <h2>Engage Teammates</h2>
+                                    <p>We bring the power of data science and artificial intelligence to every business.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-offer">
+                                <div class="icon">
+                                    <i class="fab fa-buffer"></i>
+                                </div>
+                                <div class="caption">
+                                    <h2>Level Up Productivity</h2>
+                                    <p>We bring the power of data science and artificial intelligence to every business.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn hero-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="services-2 section-gap">
+        <div class="container">
+            <div class="services-title">
+                <div class="row flex-justify-between mb-35">
+                    <div class="services-block">
+                        <span>Industries We Serve</span>
+                        <h2>IT services customized for your industry</h2>
+                    </div>
+                    <div class="services-block">
+                        <p>No matter the business, NanoSoft has you covered with industry compliant solutions, customized to your company’s specific needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-wrapper">
+                    <div class="card-inner">
+                        <div class="card-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <div class="card-cap">
+                            <h5>Industries & Manufacturing</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-inner">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="card-cap">
+                            <h5>Education & Health</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-inner">
+                        <div class="card-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="card-cap">
+                            <h5>Retail & Ecommerce</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-inner">
+                        <div class="card-icon">
+                            <i class="fas fa-plane-departure"></i>
+                        </div>
+                        <div class="card-cap">
+                            <h5>Travel & Hospitality</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="services-help">
+                Need a Technology support? <span>Get Started Now</span>
+            </p>
+        </div>
+    </div>
+
+    <section class="count-down count section-gap">
+        <div class="container">
+            <div class="count-down-title mb-50">
+                <h2>Partner for Your Business</h2>
+                <p>We understand the complexities of modern markets and translate them into real business solutions for automotive, financial, insurance, pharma & life sciences, and real estate with more to come.</p>
+                <a href="#">Request a Quote</a>
+            </div>
+            <div class="row flex-justify-between">
+                <div class="counter-wrapper">
+                    <div class="counter-inner">
+                        <div class="single-counter">
+                            <span class="counter">2500</span>
+                            <p>+</p>
+                        </div>
+                        <div class="counter-cap">
+                            <p>We understand the complexities of modern markets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="counter-wrapper">
+                    <div class="counter-inner">
+                        <div class="single-counter">
+                            <span class="counter">350</span>
+                            <p>+</p>
+                        </div>
+                        <div class="counter-cap">
+                            <p>We understand the complexities of modern markets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="counter-wrapper">
+                    <div class="counter-inner">
+                        <div class="single-counter">
+                            <span class="counter">20</span>
+                            <p>+</p>
+                        </div>
+                        <div class="counter-cap">
+                            <p>We understand the complexities of modern markets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stuff section-gap">
+        <div class="container">
+            <div class="stuff-title mb-35">
+                <h2>Some of Our Great Stuffs</h2>
+            </div>
+            <div class="row">
+                <div class="stuff-wrapper">
+                    <div class="stuff-inner">
+                        <div class="stuff-image">
+                            <img src="/images/stuff-1.webp" alt="">
+                        </div>
+                        <div class="stuff-details">
+                            <span></span>
+                            <h4>Inspire</h4>
+                            <p>Design</p>
+                        </div>
+                    </div>
+                    <h3>The Security Risks of Changing Package Owners</h3>
+                </div>
+                <div class="stuff-wrapper">
+                    <div class="stuff-inner">
+                        <div class="stuff-image">
+                            <img src="/images/stuff-1.webp" alt="">
+                        </div>
+                        <div class="stuff-details">
+                            <span></span>
+                            <h4>Inspire</h4>
+                            <p>Design</p>
+                        </div>
+                    </div>
+                    <h3>The Security Risks of Changing Package Owners</h3>
+                </div>
+                <div class="stuff-wrapper">
+                    <div class="stuff-inner">
+                        <div class="stuff-image">
+                            <img src="/images/stuff-1.webp" alt="">
+                        </div>
+                        <div class="stuff-details">
+                            <span></span>
+                            <h4>Inspire</h4>
+                            <p>Design</p>
+                        </div>
+                    </div>
+                    <h3>The Security Risks of Changing Package Owners</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection section-gap">
+        <div class="container">
+            <div class="row flex-justify-center">
+                <div class="collection-stuff">
+                    <h2>Innovative IT Solution for your Business & Startup</h2>
+                    <p class="center">
+                        <a href="#">
+                            <span>Get Started Now</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row flex-justify-between">
+                <div class="footer-block-4">
+                    <div class="inner">
+                        <div class="footer-main">
+                            <h2>IT Solutions</h2>
+                            <p>Duis aute irure dolor inasfa reprehenderit in voluptate velit esse cillum</p>
+                            <p class="phone">10 87 312-9891</p>
+                            <p class="email">contact@example.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-block-2">
+                    <div class="inner">
+                        <div class="navigation">
+                            <h2>Navigation</h2>
+                            <div class="footer-links">
+                                <a href="">Home</a>
+                                <a href="">About</a>
+                                <a href="">Services</a>
+                                <a href="">Blog</a>
+                                <a href="">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-block-2">
+                    <div class="inner">
+                        <div class="services">
+                            <h2>Services</h2>
+                            <div class="footer-links">
+                                <a href="">Drone Mapping</a>
+                                <a href="">About</a>
+                                <a href="">Services</a>
+                                <a href="">Blog</a>
+                                <a href="">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-block-4">
+                    <div class="inner">
+                        <div class="newsletter">
+                            <h2>Subscribe newsletter</h2>
+                            <p>Subscribe our newsletter to get updates about our services and offers.</p>
+                            <form action="">
+                                <input type="text" placeholder="Email Address">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-footer">
+            <div class="container">
+                <p>Copyright &copy;2021 All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app/js/main.js"></script>
+</body>
+</html>
